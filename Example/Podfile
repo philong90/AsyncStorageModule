@@ -1,0 +1,6 @@
+use_frameworks!
+target 'AsyncStorageModule_Tests' do
+  pod 'AsyncStorageModule', :path => '../'
+  
+  
+end
