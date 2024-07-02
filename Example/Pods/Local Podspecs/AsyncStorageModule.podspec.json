@@ -1,0 +1,22 @@
+{
+  "name": "AsyncStorageModule",
+  "version": "0.1.0",
+  "summary": "A short description of AsyncStorageModule.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Long bui/AsyncStorageModule",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Long bui": "philong90@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/Long bui/AsyncStorageModule.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "AsyncStorageModule/Classes/**/*"
+}
