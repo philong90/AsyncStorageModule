@@ -18,36 +18,37 @@
 //@end
 
 #import <Foundation/Foundation.h>
-#import "React/RCTBridgeModule.h"
+// #import "React/RCTBridgeModule.h"
 
-@interface AsyncStorageModule : NSObject <RCTBridgeModule>
-@end
 
-@implementation AsyncStorageModule
+// @interface AsyncStorageModule : NSObject <RCTBridgeModule>
+// @end
 
-// Macro for exporting the module to React Native
-RCT_EXPORT_MODULE(AsyncStorageModule);
+// @implementation AsyncStorageModule
 
-// React Native's threading model requires this method to specify if the module needs to be initialized on the main thread
-+ (BOOL)requiresMainQueueSetup {
-    return NO;
-}
+// // Macro for exporting the module to React Native
+// RCT_EXPORT_MODULE(AsyncStorageModule);
 
-// Example method exposed to React Native
-RCT_EXPORT_METHOD(test) {
-    NSLog(@"test called");
-}
+// // React Native's threading model requires this method to specify if the module needs to be initialized on the main thread
+// + (BOOL)requiresMainQueueSetup {
+//     return NO;
+// }
 
-// Method to get an access token, returning a promise
-RCT_REMAP_METHOD(getAccessToken, getAccessTokenWithResolver:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject) {
-    NSLog(@"getAccessToken called");
-    resolve(@"AccessToken");
-}
+// // Example method exposed to React Native
+// RCT_EXPORT_METHOD(test) {
+//     NSLog(@"test called");
+// }
 
-// Method to get user information, returning a promise
-RCT_REMAP_METHOD(getUserInfo, getUserInfoWithResolver:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject) {
-    NSLog(@"getUserInfo called");
-    resolve(@"{\"userName\": \"User1\", \"userId\": \"UserID1\", \"email\": \"user1@example.com\"}");
-}
+// // Method to get an access token, returning a promise
+// RCT_REMAP_METHOD(getAccessToken, getAccessTokenWithResolver:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject) {
+//     NSLog(@"getAccessToken called");
+//     resolve(@"AccessToken");
+// }
 
-@end
+// // Method to get user information, returning a promise
+// RCT_REMAP_METHOD(getUserInfo, getUserInfoWithResolver:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject) {
+//     NSLog(@"getUserInfo called");
+//     resolve(@"{\"userName\": \"User1\", \"userId\": \"UserID1\", \"email\": \"user1@example.com\"}");
+// }
+
+// @end
